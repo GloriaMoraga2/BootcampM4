@@ -1,0 +1,79 @@
+body {
+  background: radial-gradient(
+    circle,
+    rgba(178, 172, 186, 0.4) 2%,
+    rgba(148, 120, 200, 0.8) 100%
+  );
+  font-family: "Roboto", sans-serif;
+}
+
+#welcomeBox,
+#flightBox {
+  position: relative;
+  background: #ffffff;
+  max-width: 75%;
+  width: 50%;
+  padding: 45px;
+  margin-top: 2%;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  text-align: left;
+  min-width: 579px;
+}
+
+#flightBox {
+  width: 40%;
+  text-align: center;
+  margin-top: 4%;
+}
+
+.container-fluid {
+  padding-right: 17% !important;
+  padding-left: 17% !important;
+}
+
+#time,
+#date {
+  display: inline-block;
+  background: #ffffff;
+  padding: 45px;
+  width: 20em;
+  margin-top: 4%;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  text-align: center;
+}
+
+#time {
+  float: left;
+  margin-left: 10%;
+}
+
+#date {
+  float: right;
+  margin-right: 10%;
+}
+
+.form {
+  position: relative;
+  background: #ffffff;
+  max-width: 360px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  margin: 0 auto 100px;
+}
+
+.container {
+  position: relative;
+  max-width: 300px;
+  margin: 0 auto;
+  clear: both;
+}
+
+.modal {
+  font-size: 15px;
+  margin: auto;
+}
+
+.modal-content {
+  color: rgb(17, 5, 71); /* Cambia este valor por el color que prefieras */
+}

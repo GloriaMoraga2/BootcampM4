@@ -1,0 +1,59 @@
+/* Elimina el margen y el padding predeterminados de todos los elementos para tener un lienzo limpio */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+}
+
+/* Estilo del contenedor de la tarjeta */
+.tarjeta {
+  width: 695px; /* Define el ancho fijo de la tarjeta */
+  height: 423px; /* Define la altura fija de la tarjeta */
+  margin: 0 auto; /* Centra la tarjeta horizontalmente en la página */
+}
+
+/* Contenedor de la imagen */
+.imagen {
+  position: relative; /* Define un contexto para que los hijos con 'position: absolute' se posicionen respecto a este contenedor */
+  width: 695px; /* Ancho igual al de la tarjeta */
+  height: 423px; /* Altura igual al de la tarjeta */
+}
+
+/* Estilo del texto descriptivo debajo de la imagen */
+.texto {
+  width: 695px; /* Ancho igual al de la tarjeta */
+  text-align: justify; /* Justifica el texto para que quede alineado a ambos lados */
+  padding: 15px 0px; /* Añade un padding superior e inferior de 15px para separación */
+}
+
+/* Estilo de la superposición sobre la imagen */
+.overlay {
+  transition: 0.5s;
+  opacity: 0;
+  color: #fff; /* Color del texto en la superposición, blanco */
+  text-align: center; /* Centra el texto horizontalmente */
+  position: absolute; /* Posiciona la superposición respecto al contenedor padre (.imagen) */
+  top: 0; /* Alinea la parte superior de la superposición con la parte superior del contenedor */
+  left: 0; /* Alinea la parte izquierda de la superposición con la parte izquierda del contenedor */
+  width: 100%; /* La superposición cubre el 100% del ancho del contenedor padre */
+  height: 100%; /* La superposición cubre el 100% de la altura del contenedor padre */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Fondo semi-transparente negro para crear un efecto de superposición sobre la imagen */
+  z-index: 1; /* Asegura que la superposición esté delante de la imagen */
+  display: flex; /* Utiliza flexbox para centrar el contenido de la superposición */
+  flex-direction: column; /* Alinea los elementos hijos (títulos) en una columna */
+  justify-content: center; /* Centra los elementos hijos verticalmente en la superposición */
+}
+
+.mostrar {
+  opacity: 100;
+  transition: 0.5s;
+}

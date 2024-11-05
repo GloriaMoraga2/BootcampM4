@@ -1,0 +1,125 @@
+/* Quita el margen y el relleno de todos los elementos, asegurando que todos comiencen desde cero */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Establece el color de fondo del cuerpo de la página */
+body {
+  background-color: rgb(218, 211, 211) !important;
+}
+
+/* Contenedor principal para centrar el contenido en la página */
+.container {
+  width: 100%;
+  align-content: center;
+  text-align: center;
+}
+
+/* Estilos para la barra de navegación, con fondo negro */
+.navbar {
+  background-color: black;
+}
+
+/* Estilos para la marca de la barra de navegación, que cambia el color del texto a blanco */
+.navbar-light .navbar-brand {
+  color: white;
+}
+
+/* Estilos para los enlaces dentro de la barra de navegación, cambiando el color del texto a blanco */
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+/* Estilos para el botón del menú de la barra de navegación, cambiando el color del ícono y el borde a blanco */
+.navbar-light .navbar-toggler {
+  color: white;
+  border-color: white;
+}
+
+/* Estilos para títulos, centrando el texto */
+.title {
+  text-align: center;
+}
+
+/* Estilos para la superposición (overlay), que aparece sobre un elemento con un efecto de transición de opacidad */
+.overlay {
+  transition: opacity 0.5s ease; /* Mejora la transición de opacidad para una animación más suave */
+  opacity: 0; /* La opacidad inicial es 0 (invisible) */
+  color: #fff; /* Texto blanco */
+  text-align: center;
+  position: absolute; /* Posiciona la superposición sobre el elemento */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente */
+  z-index: 1; /* Asegura que la superposición esté por encima del contenido principal */
+  display: flex; /* Uso de flexbox para centrar el contenido dentro de la superposición */
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Clase adicional para mostrar la superposición, cambiando la opacidad a 1 (visible) */
+.overlay.mostrar {
+  opacity: 1;
+}
+
+/* Clase para mostrar un elemento con opacidad de 100 */
+.mostrar {
+  opacity: 100; /* Esta línea tiene un valor incorrecto, debería ser 'opacity: 1' para un valor válido */
+  transition: 0.5s; /* Transición para el cambio de opacidad */
+}
+
+/* Estilo para el texto principal, con relleno y fondo blanco */
+.texto {
+  width: 100%;
+  text-align: justify;
+  padding: 15px 20px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+/* Estilo para botones personalizados */
+.button {
+  padding: 10px 20px;
+  margin: 15px;
+  background-color: #9a9fa5; /* Color de fondo gris */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo para las tarjetas, con ancho fijo y ocultas inicialmente */
+.tarjeta {
+  width: 695px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 50px;
+  display: none; /* Oculta todas las tarjetas inicialmente */
+}
+
+/* Estilo para la imagen, con posición relativa y ocultando el desbordamiento */
+.imagen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Contenedor de múltiples tarjetas, dispuesto en columna y alineado al centro */
+.tarjetas {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espacio entre cada tarjeta */
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* Estilos para el dropdown, personalizando el aspecto del selector */
+.dropdown select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px; /* Bordes redondeados */
+  border: 1px solid #ccc; /* Borde gris claro */
+}
